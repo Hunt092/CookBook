@@ -1,0 +1,30 @@
+@import './Styles/abstract';
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.1;
+}
+
+h1 {
+	font-size: $font-title-xl;
+}
+h2{
+  font-size: $font-title-l;
+}
+h3{
+  font-size: $font-title;
+}
+p{
+  font-size: $font-para-l;
+}

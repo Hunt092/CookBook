@@ -1,0 +1,13 @@
+_ Design
+    color pallet
+    layout
+    typography
+
+_Functionality
+    to be discussed
+
+_Api
+    need to find a api to get recipe 
+/
+_Backend
+    if time premits
