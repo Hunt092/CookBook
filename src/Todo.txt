@@ -1,6 +1,6 @@
 _ Design
-    color pallet
-    layout
+   x color pallet
+   x layout
     typography
 
 _Functionality

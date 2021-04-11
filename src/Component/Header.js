@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div>
+        <header>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut, enim, excepturi laborum consequuntur voluptatum, tenetur porro deleniti ea ipsam eum nulla id quaerat nobis quis quo similique incidunt. Sapiente.
             </p>
