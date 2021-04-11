@@ -12,7 +12,7 @@ const Header = () => {
             <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aut, enim, excepturi laborum consequuntur voluptatum, tenetur porro deleniti ea ipsam eum nulla id quaerat nobis quis quo similique incidunt. Sapiente.
             </h3> */}
-        </div>
+        </header>
     )
 }
 
