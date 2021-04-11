@@ -1,6 +1,10 @@
-$font-title-l: clamp(3rem, 5vw, 4rem);
+$font-logo: clamp(3rem, 5vw, 3.75rem);
+
+$font-title-l: clamp(2rem, 5vw, 3rem);
 $font-title: clamp(1.5rem, 5vw, 2rem);
 $font-title-s: clamp(0.75rem, 5vw, 1rem);
+
+$font-nav: clamp(1.05rem, 5vw, 1.875rem);
 
 $font-para-l: clamp(1rem, 3vw, 1.5rem);
 $font-para: clamp(14px, 3vw, 1.25rem);
