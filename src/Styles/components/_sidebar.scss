@@ -4,6 +4,7 @@
 	background: $clr-bg-base-700;
 	padding: 1.25rem 5%;
 	position: fixed;
+    z-index: 1;
 	.search {
 		height: 100vh;
 		overflow: hidden;
