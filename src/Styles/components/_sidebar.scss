@@ -1,12 +1,12 @@
 .side__menu {
-	width: 25%;
+	width: 100%;
 	min-width: 15rem;
 	background: $clr-bg-base-700;
-	padding: 1.25rem 5%;
-	position: fixed;
+	padding: 1.25rem 10% 0;
+	// position: fixed;
     z-index: 1;
 	.search {
-		height: 100vh;
+		height: fit-content;
 		overflow: hidden;
 		&__bar {
 			width: 100%;
@@ -64,7 +64,7 @@
 		&__results {
 			margin-top: 10px;
 			overflow-y: scroll;
-            height: 67vh;
+            height: 80vh;
             &::-webkit-scrollbar{
                 width: 5px;
             }

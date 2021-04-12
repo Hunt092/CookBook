@@ -4,7 +4,7 @@ const RecipeList = ({ List = [] }) => {
     return (
         <ol className="search__results">
             {
-                List.map((data, index) => {
+                List.slice(0,22).map((data, index) => {
                     if (data) {
                         return (
                             <li key={data.name}>

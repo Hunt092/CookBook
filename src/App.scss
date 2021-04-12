@@ -30,3 +30,9 @@ h3 {
 p {
 	font-size: $font-para-l;
 }
+
+
+.content{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}

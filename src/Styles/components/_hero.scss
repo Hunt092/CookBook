@@ -1,0 +1,8 @@
+.recipe {
+	padding: 3% 5%;
+	background-color: $clr-bg-base-500;
+	background-image: url("../../Assets/paper2.svg");
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	gap: 50px;
+}
