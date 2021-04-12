@@ -28,11 +28,12 @@ h3 {
 	font-size: $font-title;
 }
 p {
-	font-size: $font-para-l;
+	font-size: $font-para;
+	font-weight: 400;
+	font-family: "Mulish", sans-serif;
 }
 
-
-.content{
+.content {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }

@@ -4,7 +4,7 @@
 	background: $clr-bg-base-700;
 	padding: 1.25rem 10% 0;
 	// position: fixed;
-    z-index: 1;
+	z-index: 1;
 	.search {
 		height: fit-content;
 		overflow: hidden;
@@ -54,27 +54,30 @@
 					transition: all 0.3s ease;
 				}
 				.span-label {
-					bottom: 5px;
+					bottom: 0px;
 					left: 0px;
 					position: absolute;
 					transition: 0.3s ease;
+					svg {
+						width: 17px;
+						margin: 0 5px 0 0;
+						padding-top: 10px;
+					}
 				}
 			}
 		}
 		&__results {
 			margin-top: 10px;
-			overflow-y: scroll;
-            height: 80vh;
-            &::-webkit-scrollbar{
-                width: 5px;
-            }
-            li{
-
-                p{
-                    font-size: $font-title-s;
-                }
-                
-            }
+			// overflow-y: scroll;
+			height: 80vh;
+			&::-webkit-scrollbar {
+				width: 5px;
+			}
+			li {
+				p {
+					font-size: $font-title-s;
+				}
+			}
 		}
 	}
 }

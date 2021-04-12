@@ -8,6 +8,9 @@ header {
 	position: relative;
 	top: 0;
 	z-index: 2;
+	.logo{
+		font-weight: 900;
+	}
 	nav {
 		margin: auto 0;
 	}
@@ -25,8 +28,10 @@ header {
 			margin: 0 15px;
 			a {
 				font-size: $font-nav;
+				font-weight: 500;
 				padding: 10px;
 				transition: $transition;
+				color: $clr-font-blue-400;
 				&:hover {
 					color: $clr-accent;
 				}

@@ -1,4 +1,6 @@
 import React from 'react'
+import Ingredient from './Ingredient'
+import Steps from './Steps'
 
 const Content = () => {
     return (
@@ -7,11 +9,12 @@ const Content = () => {
                 <h2 className="title">
                     recipe name
                 </h2>
-                <hr/>
                 <h3 className="author">
-                    Author NAme
+                    Author name
                 </h3>
             </div>
+            <Ingredient />
+            <Steps />
         </div>
     )
 }

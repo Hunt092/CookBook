@@ -1,6 +1,6 @@
 import './App.scss';
 import Header from './Component/Header';
-import Hero from './Component/Hero';
+import Recipe from './Component/Recipe';
 import Sidebar from './Component/Sidebar';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Header/>
       <div className="content">
         <Sidebar/>
-        <Hero/>
+        <Recipe/>
       </div>
     </div>
   );
