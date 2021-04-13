@@ -1,13 +1,19 @@
-_ Design
+X Design
    x color pallet
    x layout
-    typography
+   x typography
 
-_Functionality
-    to be discussed
+_ Functionality
+    x Get Functionality
+    _ Post
+    _ User 
 
-_Api
+-_Api-- Dead ENd
     need to find a api to get recipe 
 /
-_Backend
+_ Backend
+    x Firebase 
+    _ Linking backend to frontend
+
+
     if time premits
