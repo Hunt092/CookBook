@@ -1,7 +1,7 @@
 .recipe {
 	padding: 3% 4%;
 	background-color: $clr-bg-base-500;
-	background-image: url("../../Assets/paper2.svg");
+	background-image: url("../../Assets/paper2.webp");
 	display: grid;
 	grid-template-columns: 3fr 2fr;
 	gap: 30px;
@@ -33,12 +33,13 @@
 				flex-wrap: wrap;
 				max-height: 35vh;
 				counter-reset: section;
-				
+
 				li {
 					text-transform: capitalize;
 					position: relative;
 					max-width: 25ch;
 					margin-right: 10px;
+					margin-left: 2rem;
 					&::before {
 						color: $clr-font-blue-400;
 						counter-increment: section;
@@ -47,15 +48,21 @@
 						left: -1.75rem;
 					}
 				}
+				@media (max-width: 60em){
+					max-height: 45vh;
+					
+				}
 				@media (max-width: 50em) {
 					max-height: fit-content;
 					li {
 						max-width: 40ch;
+						margin: 0;
 						&::before {
 							content: " ";
 						}
 					}
 				}
+				
 			}
 		}
 		.steps {
@@ -74,7 +81,7 @@
 			width: 100%;
 		}
 	}
-	@media (max-width: 50em){
+	@media (max-width: 60em) {
 		display: flex;
 		flex-direction: column-reverse;
 	}
