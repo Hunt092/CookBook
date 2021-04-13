@@ -6,8 +6,8 @@ const Sidebar = ({input,setInput, currentRecipeList, setRecipeList ,RecipeListDe
     
 
     const updateInput = async (input) => {
-        const filtered = RecipeListDefault.filter(country => {
-            return country.name.toLowerCase().includes(input.toLowerCase())
+        const filtered = RecipeListDefault.filter(recipe => {
+            return recipe.title.toLowerCase().includes(input.toLowerCase())
         })
         setInput(input);
         setRecipeList(filtered);

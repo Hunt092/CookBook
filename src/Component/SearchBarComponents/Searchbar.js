@@ -1,5 +1,4 @@
 import React from 'react';
-import search from '../../Assets/Vector.svg'
 const SearchBar = ({ keyword, setKeyword }) => {
 
     return (

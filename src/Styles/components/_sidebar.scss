@@ -1,6 +1,7 @@
 .side__menu {
 	width: 100%;
 	min-width: 15rem;
+
 	background: $clr-bg-base-700;
 	padding: 1.25rem 10% 0;
 	// position: fixed;
@@ -79,5 +80,9 @@
 				}
 			}
 		}
+	}
+	@media (max-width:50em){
+		min-width: clamp(10rem, 2vw,15rem);
+
 	}
 }

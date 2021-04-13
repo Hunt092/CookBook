@@ -7,8 +7,8 @@ const RecipeList = ({ List = [], selectRecipe }) => {
                 List.slice(0,22).map((data, index) => {
                     if (data) {
                         return (
-                            <li key={data.name} onClick={(e)=>{selectRecipe(data.name)}}>
-                                <p>{data.name}</p>
+                            <li key={data.id} onClick={(e)=>{selectRecipe(data.id)}}>
+                                <p>{data.title}</p>
                             </li>
                         )
                     }

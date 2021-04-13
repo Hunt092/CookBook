@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Ingredient = () => {
+const Ingredient = ({ingredients}) => {
     return (
         <div className="ingredients">
             <h3 className="subtitle">
                 Ingredients
             </h3>
             <ol>
-                <li>one</li>
-                <li>two</li>
-                <li>THREE</li>
+                {ingredients.map(ingredient =>(
+                    <li>{ingredient}</li>
+                ))}
             </ol>
         </div>
     )

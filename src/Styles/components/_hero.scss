@@ -31,24 +31,37 @@
 				grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
 				flex-direction: column;
 				flex-wrap: wrap;
-				max-height: 150px;
+				max-height: 35vh;
 				counter-reset: section;
+				
 				li {
 					text-transform: capitalize;
-
+					position: relative;
+					max-width: 25ch;
+					margin-right: 10px;
 					&::before {
+						color: $clr-font-blue-400;
 						counter-increment: section;
-						content: counter(section);
-						margin-right: 2px;
+						content: counter(section) ".";
+						position: absolute;
+						left: -1.75rem;
+					}
+				}
+				@media (max-width: 50em) {
+					max-height: fit-content;
+					li {
+						max-width: 40ch;
+						&::before {
+							content: " ";
+						}
 					}
 				}
 			}
 		}
 		.steps {
 			ul {
-				
 				li {
-                    margin: 1.125rem 0;
+					margin: clamp(0.5rem, 2vw, 1.25rem) 0;
 				}
 			}
 		}
@@ -60,5 +73,9 @@
 		img {
 			width: 100%;
 		}
+	}
+	@media (max-width: 50em){
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }
