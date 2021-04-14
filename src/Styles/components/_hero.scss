@@ -1,6 +1,6 @@
 .recipe {
 	padding: 3% 4%;
-	background-color: $clr-bg-base-500;
+	background-color: $clr-bg-base-200;
 	background-image: url("../../Assets/paper2.webp");
 	display: grid;
 	grid-template-columns: 3fr 2fr;
@@ -11,6 +11,7 @@
 			width: 75%;
 			border-bottom: 1px solid;
 			text-transform: capitalize;
+			color: $clr-font-blue-700;
 		}
 		.author {
 			font-size: $font-para-l;
@@ -31,7 +32,7 @@
 				grid-template-rows: repeat(auto-fill, minmax(10px, 1fr));
 				flex-direction: column;
 				flex-wrap: wrap;
-				max-height: 35vh;
+				max-height: 45vh;
 				counter-reset: section;
 
 				li {
@@ -41,7 +42,7 @@
 					margin-right: 10px;
 					margin-left: 2rem;
 					&::before {
-						color: $clr-font-blue-400;
+						color: $clr-font-blue-200;
 						counter-increment: section;
 						content: counter(section) ".";
 						position: absolute;
@@ -49,7 +50,7 @@
 					}
 				}
 				@media (max-width: 60em) {
-					max-height: 45vh;
+					max-height: 55vh;
 				}
 				@media (max-width: 50em) {
 					max-height: fit-content;
@@ -91,7 +92,7 @@
 	justify-content: center;
 	position: relative;
 	min-height: 90vh;
-	background: $clr-bg-base-500;
+	background: $clr-bg-base-200;
 	overflow: hidden;
 
 	.jumbotron {
@@ -107,6 +108,7 @@
 		h1 {
 			font-size: clamp(2.75rem, 7vw, 3rem);
 			text-align: center;
+			color: $clr-font-blue-700;
 		}
 		h3 {
 			color: $clr-accent;

@@ -1,12 +1,14 @@
-$clr-bg-base-500: #fceade;
-$clr-bg-base-700: #ddbfa9;
+$clr-bg-base-200: hsl(24, 83%, 93%);
+$clr-bg-base-400: hsl(24, 63%, 76%);
+$clr-bg-base-600: hsl(24, 63%, 56%);
 
-$clr-bg-blue-700: #5d5d81;
+$clr-bg-blue-700: hsl(240, 16%, 44%);
 
-$clr-bg-white: rgba(255, 255, 255, 0.4);
+$clr-bg-white: hsla(0, 0%, 100%, 0.4);
 
-$clr-font-blue-700: #5d5d81;
-$clr-font-blue-400: #7b8cde;
+$clr-font-blue-700: hsl(240, 16%, 24%);
+$clr-font-blue-400: hsl(240, 16%, 44%);
+$clr-font-blue-200: hsl(240, 16%, 68%);
 
-$clr-accent: #550c18;
-$clr-accent-light: #5c202ad8;
+$clr-accent: hsl(350, 75%, 19%);
+$clr-accent-light: hsla(350, 75%, 30%, 0.89);

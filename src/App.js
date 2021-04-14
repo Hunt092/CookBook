@@ -42,6 +42,7 @@ function App() {
   };
 
   const selectRecipe = (id) => {
+    
     setrecipe(
       RecipeListDefault.filter(rec => 
          rec.id === id
@@ -49,8 +50,8 @@ function App() {
     )
     setToggle(false)
     document.body.style.overflow = 'unset';
-    setInput('')
-    setRecipeList([])
+    setInput("")
+    setRecipeList(RecipeListDefault)
   }
   
   useEffect(() => { getRecipes() }, []);

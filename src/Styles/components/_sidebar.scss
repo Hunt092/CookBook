@@ -2,7 +2,7 @@
 	width: 100%;
 	min-width: 15rem;
 
-	background: $clr-bg-base-700;
+	background: $clr-bg-base-400;
 	padding: 1.25rem 10% 0;
 	// position: fixed;
 	z-index: 1;
@@ -53,7 +53,7 @@
 			left: 0px;
 			bottom: 0px;
 			pointer-events: none;
-			border-bottom: 3px solid $clr-font-blue-700;
+			border-bottom: 3px solid $clr-font-blue-400;
 			&::after {
 				content: "";
 				position: absolute;
@@ -80,7 +80,6 @@
 	}
 	&__results {
 		margin-top: 10px;
-		// overflow-y: scroll;
 		height: 80vh;
 		&::-webkit-scrollbar {
 			width: 5px;
@@ -89,6 +88,11 @@
 			cursor:pointer;
 			p {
 				font-size: $font-title-s;
+				transition: $transition;
+				&:hover{
+					font-weight: 600;
+					color: $clr-accent
+				}
 			}
 		}
 	}

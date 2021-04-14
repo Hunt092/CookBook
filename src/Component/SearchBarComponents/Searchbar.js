@@ -4,6 +4,7 @@ const SearchBar = ({ keyword, setKeyword }) => {
     return (
         <div className="search__bar">
             <input
+            id="search"
                 type="text"
                 name="SearchBar"
                 value={keyword}
