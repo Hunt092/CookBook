@@ -48,9 +48,8 @@
 						left: -1.75rem;
 					}
 				}
-				@media (max-width: 60em){
+				@media (max-width: 60em) {
 					max-height: 45vh;
-					
 				}
 				@media (max-width: 50em) {
 					max-height: fit-content;
@@ -62,7 +61,6 @@
 						}
 					}
 				}
-				
 			}
 		}
 		.steps {
@@ -75,7 +73,7 @@
 	}
 	&__image {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		padding-top: 3rem;
 		img {
 			width: 100%;
@@ -84,5 +82,89 @@
 	@media (max-width: 60em) {
 		display: flex;
 		flex-direction: column-reverse;
+	}
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 90vh;
+	background: $clr-bg-base-500;
+	overflow: hidden;
+
+	.jumbotron {
+		position: relative;
+		left: -3%;
+
+		top: -2%;
+		.logo {
+			font-family: "Oldenburg", cursive;
+			font-weight: 900;
+			color: $clr-accent-light;
+		}
+		h1 {
+			font-size: clamp(2.75rem, 7vw, 3rem);
+			text-align: center;
+		}
+		h3 {
+			color: $clr-accent;
+			text-align: right;
+			padding-right: 7%;
+			font-family: "Mulish", sans-serif;
+		}
+		@media (max-width: 62em) {
+			left: 0;
+
+			top: 0;
+		}
+	}
+}
+
+.arrow_desktop {
+	position: absolute;
+	left: 10px;
+	top: 25%;
+	@media (max-width: 65em) {
+		display: none;
+	}
+	#Desktop_Arrow {
+		stroke-dasharray: 1323;
+
+		animation: DesktopArrow 3s 0.25s cubic-bezier(0.22, -0.42, 0.58, 1.12);
+	}
+}
+
+.arrow_moblie {
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(45%);
+	#Moblie_Arrow {
+		stroke-dasharray: 454;
+		animation: MoblieArrow 1s 0.05s cubic-bezier(0.22, -0.42, 0.58, 1.12);
+	}
+	@media (min-width: 55em) {
+		display: none;
+	}
+}
+
+@keyframes DesktopArrow {
+	0% {
+		display: none;
+		stroke-dashoffset: 1325;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes MoblieArrow {
+	0% {
+		display: none;
+		stroke-dashoffset: 455;
+	}
+	100% {
+		stroke-dashoffset: 0;
 	}
 }

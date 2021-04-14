@@ -1,17 +1,18 @@
 import React from 'react'
-import NavBar from './NavComponents/NavBar'
 import NavMenu from './NavComponents/NavMenu'
 
 
-const Header = () => {
+const Header = ({input,setInput, currentRecipeList, setRecipeList ,RecipeListDefault,selectRecipe, setToggle, isToggled }) => {
+    
+    
     return (
         <header>
             <a href="/">
                 <h1 className="logo">CookBook</h1>
             </a>
             <nav>
-                <NavBar/>
-                <NavMenu/>
+                {/* <NavBar/> */}
+                <NavMenu input={input} setInput={setInput} currentRecipeList={currentRecipeList} setRecipeList={setRecipeList} RecipeListDefault={RecipeListDefault} selectRecipe={selectRecipe} setToggle={setToggle} isToggled={isToggled}/>
             </nav>
         </header>
     )

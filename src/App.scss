@@ -36,4 +36,7 @@ p {
 .content {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
+	@media (max-width: 55em) {
+		grid-template-columns: 1fr;
+	}
 }

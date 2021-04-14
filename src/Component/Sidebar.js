@@ -2,7 +2,7 @@ import React from 'react'
 import RecipeList from './SearchBarComponents/RecipeList';
 import SearchBar from './SearchBarComponents/Searchbar';
 
-const Sidebar = ({input,setInput, currentRecipeList, setRecipeList ,RecipeListDefault,selectRecipe }) => {
+const Sidebar = ({input,setInput, currentRecipeList, setRecipeList ,RecipeListDefault,selectRecipe, position }) => {
     
 
     const updateInput = async (input) => {
@@ -15,7 +15,7 @@ const Sidebar = ({input,setInput, currentRecipeList, setRecipeList ,RecipeListDe
 
    
     return (
-        <aside className="side__menu">
+        <aside className={"side__menu " +position}>
 
             <div className="search">
                 <SearchBar

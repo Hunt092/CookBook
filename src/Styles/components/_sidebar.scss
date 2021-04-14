@@ -6,83 +6,89 @@
 	padding: 1.25rem 10% 0;
 	// position: fixed;
 	z-index: 1;
-	.search {
-		height: fit-content;
-		overflow: hidden;
-		&__bar {
+
+	&.desktop{
+		@media (max-width: 55em) {
+			display: none;
+		}
+	}
+	&.moblie{
+		margin-top: 5rem;
+	}
+}
+
+.search {
+	height: fit-content;
+	overflow: hidden;
+	&__bar {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		input {
+			border: none;
+			outline: none;
+			height: 100%;
 			width: 100%;
-			height: 50px;
-			position: relative;
-			input {
-				border: none;
-				outline: none;
-				height: 100%;
-				width: 100%;
-				padding-top: 15px;
-				font-size: 20px;
-				color: $clr-accent;
-				background-color: transparent;
-				&:focus + .label-name,
-				&:valid + .label-name {
-					.span-label {
-						transform: translateY(-100%);
-						font-size: 14px;
-						color: $clr-accent;
-						font: small-caps;
-					}
-					&::after {
-						transform: translateX(0%);
-					}
-				}
-			}
-			label {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				left: 0px;
-				bottom: 0px;
-				pointer-events: none;
-				border-bottom: 3px solid $clr-font-blue-700;
-				&::after {
-					content: "";
-					position: absolute;
-					height: 100%;
-					width: 100%;
-					border-bottom: 3px solid $clr-accent;
-					left: 0px;
-					bottom: -3px;
-					transform: translateX(-100%);
-					transition: all 0.3s ease;
-				}
+			padding-top: 15px;
+			font-size: 20px;
+			color: $clr-accent;
+			background-color: transparent;
+			&:focus + .label-name,
+			&:valid + .label-name {
 				.span-label {
-					bottom: 0px;
-					left: 0px;
-					position: absolute;
-					transition: 0.3s ease;
-					svg {
-						width: 17px;
-						margin: 0 5px 0 0;
-						padding-top: 10px;
-					}
+					transform: translateY(-100%);
+					font-size: 14px;
+					color: $clr-accent;
+					font: small-caps;
+				}
+				&::after {
+					transform: translateX(0%);
 				}
 			}
 		}
-		&__results {
-			margin-top: 10px;
-			// overflow-y: scroll;
-			height: 80vh;
-			&::-webkit-scrollbar {
-				width: 5px;
+		label {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0px;
+			bottom: 0px;
+			pointer-events: none;
+			border-bottom: 3px solid $clr-font-blue-700;
+			&::after {
+				content: "";
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				border-bottom: 3px solid $clr-accent;
+				left: 0px;
+				bottom: -3px;
+				transform: translateX(-100%);
+				transition: all 0.3s ease;
 			}
-			li {
-				p {
-					font-size: $font-title-s;
+			.span-label {
+				bottom: 0px;
+				left: 0px;
+				position: absolute;
+				transition: 0.3s ease;
+				svg {
+					width: 17px;
+					margin: 0 5px 0 0;
+					padding-top: 10px;
 				}
 			}
 		}
 	}
-	@media (max-width:50em){
-		min-width: clamp(10rem, 2vw,15rem);
-
+	&__results {
+		margin-top: 10px;
+		// overflow-y: scroll;
+		height: 80vh;
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+		li {
+			p {
+				font-size: $font-title-s;
+			}
+		}
 	}
 }
