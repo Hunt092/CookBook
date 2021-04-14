@@ -1,5 +1,4 @@
 import React from 'react'
-import desktopa from '../Assets/ArowDesktop.svg'
 const Hero = () => {
     return (
         <main className="hero">
